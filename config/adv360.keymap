@@ -89,4 +89,13 @@
             status = "reserved";
         };
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        keypad {
+            if-layers = <1>;
+            then-layer = <1>;
+        };
+    };
 };
